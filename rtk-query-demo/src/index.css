@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(114,102,231);
+  background: linear-gradient(35deg, rgba(114,102,231,1) 0%, rgba(69,128,252,1) 50%, rgba(58,180,146,1) 75%, rgba(35,180,181,1) 100%);
+  background-size: 400%;
+  animation: bg-animation 15s infinite alternate;
+  height:100vh;
+  width: 100%;
+}
+
+@keyframes bg-animation {
+  0%{background-position: left;}
+  100%{background-position: right;}
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+  border-radius: 16px;
+
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(35deg, rgba(114,102,231,1) 0%, rgba(69,128,252,1) 50%, rgba(58,180,146,1) 75%, rgba(35,180,181,1) 100%);
+  border-radius: 10px;
+}
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.todoContainer {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  width: min(100%,700px);
+  height: min(500px);
+  background: #ffffff;
+  padding: 8px 16px;
+  overflow: auto;
+  border-radius: 16px;
+}
+
+.inputArea{
+  width: min(100%,700px);
+  margin-bottom: 8px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.inputBox{
+  width: min(100%,500px);
+  padding: 12px 16px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+  rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+  rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: linear-gradient(35deg, rgba(114,102,231,1) 0%, rgba(69,128,252,1) 50%, rgba(58,180,146,1) 75%, rgba(35,180,181,1) 100%);
+  border-radius: 10px;
+  padding: 12px 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav{
+  padding: 4px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 20px;
+
+}
+a{
+  text-decoration: none;
+}
+
+.navItem{
+  color: black;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.title{
+  color: black;
+  font-family: 'Inter';
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
